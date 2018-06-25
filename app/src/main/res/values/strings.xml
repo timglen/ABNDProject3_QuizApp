@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Quiz App</string>
+
+    <string name="quiz_title">Earth Science and Geography</string>
+    <string name="submit_answers">Submit Answers</string>
+    <string name="edit_text_hint">\?</string>
+
+<!-- question 0 -->
+    <string name="question0_text">How old is the Earth in years?</string>
+    <string name="question0_rbutton1_text">1.8 million</string>
+    <string name="question0_rbutton2_text">250 million</string>
+    <string name="question0_rbutton3_text">4.5 billion</string>
+    <string name="answer0">4.5 billion</string>
+<!-- question 1 -->
+    <string name="question1_text">What is the most common element?</string>
+    <string name="question1_rbutton1_text">Nitrogen</string>
+    <string name="question1_rbutton2_text">Carbon</string>
+    <string name="question1_rbutton3_text">Iron</string>
+    <string name="answer1">Iron</string>
+<!-- question 2 -->
+    <string name="question2_text">What is the smallest continent?</string>
+    <string name="answer2">Australia</string>
+<!-- question 3 -->
+    <string name="question3_text">What causes the ocean tides?</string>
+    <string name="question3_rbutton1_text">The Moon</string>
+    <string name="question3_rbutton2_text">The Sun</string>
+    <string name="question3_rbutton3_text">El Nino</string>
+    <string name="answer3">The Moon</string>
+<!-- quesiton 4 -->
+    <string name="question4_text">Which two gases compose 99% of the atmosphere?</string>
+    <string name="question4_cbox1_text">Hydrogen</string>
+    <string name="question4_cbox2_text">Nitrogen</string>
+    <string name="question4_cbox3_text">Carbon Dioxide</string>
+    <string name="question4_cbox4_text">Oxygen</string>
+    <string name="answer4">false true false true</string>
+
+    <string name="result_message">You got %1$d correct answers out of %2$d %n for a score of %3$s</string>
+
+</resources>

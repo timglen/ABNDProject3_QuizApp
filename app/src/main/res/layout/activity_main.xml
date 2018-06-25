@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:fillViewport="true"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/spacing.large">
+
+        <!-- Display quiz topic -->
+        <TextView
+            style="@style/generalStyle"
+            android:text="@string/quiz_title"
+            android:textSize="@dimen/text.large"
+            android:textStyle="bold" />
+
+        <!-- horizontal line between questions-->
+        <View style="@style/viewLineStyle" />
+
+        <!-- question 0 has three radioButtons-->
+        <LinearLayout style="@style/linearLayoutQuestion">
+
+            <TextView
+                style="@style/textviewStyleQuestion"
+                android:text="@string/question0_text" />
+
+            <RadioGroup
+                android:id="@+id/question0_radioGroup"
+                style="@style/radioGroupStyle">
+
+                <RadioButton
+                    android:id="@+id/question0_rbutton1"
+                    style="@style/radioButtonStyle"
+                    android:text="@string/question0_rbutton1_text" />
+
+                <RadioButton
+                    android:id="@+id/question0_rbutton2"
+                    style="@style/radioButtonStyle"
+                    android:text="@string/question0_rbutton2_text" />
+
+                <RadioButton
+                    android:id="@+id/question0_rbutton3"
+                    style="@style/radioButtonStyle"
+                    android:text="@string/question0_rbutton3_text" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <!-- horizontal line between questions-->
+        <View style="@style/viewLineStyle" />
+
+        <!-- question 1 has three radioButtons -->
+        <LinearLayout style="@style/linearLayoutQuestion">
+
+            <TextView
+
+                style="@style/textviewStyleQuestion"
+                android:text="@string/question1_text" />
+
+            <RadioGroup
+                android:id="@+id/question1_radioGroup"
+                style="@style/radioGroupStyle">
+
+                <RadioButton
+                    android:id="@+id/question1_rbutton1"
+                    style="@style/radioButtonStyle"
+                    android:text="@string/question1_rbutton1_text" />
+
+                <RadioButton
+                    android:id="@+id/question1_rbutton2"
+                    style="@style/radioButtonStyle"
+                    android:text="@string/question1_rbutton2_text" />
+
+                <RadioButton
+                    android:id="@+id/question1_rbutton3"
+                    style="@style/radioButtonStyle"
+                    android:text="@string/question1_rbutton3_text" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <!-- horizontal line between questions-->
+        <View style="@style/viewLineStyle" />
+
+        <!-- question 2 has one EditText-->
+        <LinearLayout style="@style/linearLayoutQuestion">
+
+            <TextView
+                style="@style/textviewStyleQuestion"
+                android:text="@string/question2_text" />
+
+            <EditText
+                android:id="@+id/question2_edittext"
+                style="@style/textviewStyleQuestion"
+                android:hint="@string/edit_text_hint"
+                android:inputType="textCapWords" />
+
+        </LinearLayout>
+
+        <!-- horizontal line between questions-->
+        <View style="@style/viewLineStyle" />
+
+        <!-- question 3 has three radioButtons -->
+        <LinearLayout style="@style/linearLayoutQuestion">
+
+            <TextView
+                style="@style/textviewStyleQuestion"
+                android:text="@string/question3_text" />
+
+            <RadioGroup
+                android:id="@+id/question3_radioGroup"
+                style="@style/radioGroupStyle">
+
+                <RadioButton
+                    android:id="@+id/question3_rbutton1"
+                    style="@style/radioButtonStyle"
+                    android:text="@string/question3_rbutton1_text" />
+
+                <RadioButton
+                    android:id="@+id/question3_rbutton2"
+                    style="@style/radioButtonStyle"
+                    android:text="@string/question3_rbutton2_text" />
+
+                <RadioButton
+                    android:id="@+id/question3_rbutton3"
+                    style="@style/radioButtonStyle"
+                    android:text="@string/question3_rbutton3_text" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <!-- horizontal line between questions-->
+        <View style="@style/viewLineStyle" />
+
+        <!-- question 4 has 4 checkboxes-->
+        <LinearLayout style="@style/linearLayoutQuestion">
+
+            <TextView
+                style="@style/textviewStyleQuestion"
+                android:text="@string/question4_text" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/question4_cbox1"
+                    style="@style/checkBoxStyle"
+                    android:text="@string/question4_cbox1_text" />
+
+                <CheckBox
+                    android:id="@+id/question4_cbox2"
+                    style="@style/checkBoxStyle"
+                    android:text="@string/question4_cbox2_text" />
+
+                <CheckBox
+                    android:id="@+id/question4_cbox3"
+                    style="@style/checkBoxStyle"
+                    android:text="@string/question4_cbox3_text" />
+
+                <CheckBox
+                    android:id="@+id/question4_cbox4"
+                    style="@style/checkBoxStyle"
+                    android:text="@string/question4_cbox4_text" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- horizontal line between questions-->
+        <View style="@style/viewLineStyle" />
+
+        <!-- submit questions button -->
+        <Button
+            style="@style/generalStyle"
+            android:onClick="submitAnswers"
+            android:text="@string/submit_answers" />
+
+    </LinearLayout>
+
+</ScrollView>
